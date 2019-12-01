@@ -1,22 +1,30 @@
-.App {
-  text-align: center;
+.banner-img{
+  height: 40rem;
 }
 
-.App-logo {
-  height: 40vmin;
+.sofa-imgs{
+  height: 30rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.noto{
+  font-family: 'Noto Serif', serif;
 }
 
-.App-link {
-  color: #09d3ac;
+.quick{
+  font-family: 'Quicksand', sans-serif;
+}
+@media screen and (min-width: 800px){
+  .text-big{
+    font-size: 10rem !important;
+  }
+  .title-big{
+    font-size: 5rem !important;
+  }
+}
+.text-big{
+  font-size: 3rem;
+}
+
+.title-big{
+  font-size: 3rem;;
 }

@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header'
+import Background from "./assets/room.jpg"
+import Page from "./components/Page";
+import Footer from './components/Footer'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="bg-local banner-img" style={{backgroundImage: `url(${Background})`}}>
+        <Header/>
+        <div className="flex h-full">
+          <div className="w-full self-center">
+            <p className="title-big font-bold text-center noto">Estilo <br/> Escandinavo </p>
+          </div>
+        </div>
+      </div>
+      <Page/>
+      <Footer/>
     </div>
   );
 }
